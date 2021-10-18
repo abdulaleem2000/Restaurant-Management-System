@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="217.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="60.0" prefHeight="88.0" prefWidth="600.0" text="ID Already Exist">
+         <font>
+            <Font size="55.0" />
+         </font>
+      </Label>
+      <Button fx:id="alExist" layoutX="274.0" layoutY="161.0" mnemonicParsing="false" onAction="#switchToMainMenu" prefHeight="26.0" prefWidth="70.0" text="Back" />
+   </children>
+</AnchorPane>

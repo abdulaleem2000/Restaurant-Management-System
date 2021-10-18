@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TextField fx:id="recIdOrder" layoutX="87.0" layoutY="98.0" />
+      <TextField fx:id="quantityOrder" layoutX="413.0" layoutY="98.0" />
+      <Text layoutX="35.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recipe Id" />
+      <Text layoutX="365.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity" />
+      <Button fx:id="moreItemsButt" layoutX="126.0" layoutY="340.0" mnemonicParsing="false" onAction="#moreItems" prefHeight="26.0" prefWidth="85.0" text="Add Item" />
+      <Button fx:id="placeOrder" layoutX="237.0" layoutY="340.0" mnemonicParsing="false" onAction="#placeOrder" prefHeight="26.0" prefWidth="150.0" text="Place Order" />
+      <Button fx:id="backTakeOrders" layoutX="484.0" layoutY="353.0" mnemonicParsing="false" onAction="#SwitchToOrders" prefHeight="26.0" prefWidth="79.0" text="Back" />
+      <TextField fx:id="totalPriceOrder" layoutX="251.0" layoutY="182.0" />
+      <Text layoutX="199.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total" />
+      <TextField fx:id="cash" layoutX="251.0" layoutY="224.0" />
+      <Text layoutX="199.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cash" />
+      <TextField fx:id="returnCash" layoutX="251.0" layoutY="265.0" />
+      <Text layoutX="180.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Return Cash" />
+      <Button fx:id="gntRecpt" layoutX="5.0" layoutY="340.0" mnemonicParsing="false" onAction="#switchToReceipt" text="Generate Receipt" />
+   </children>
+</AnchorPane>

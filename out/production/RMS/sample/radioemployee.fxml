@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <RadioButton fx:id="rName" layoutX="14.0" layoutY="120.0" mnemonicParsing="false" onAction="#changeEmployee" prefHeight="28.0" prefWidth="110.0" text="Name">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="employee" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rCnic" layoutX="15.0" layoutY="172.0" mnemonicParsing="false" onAction="#changeEmployee" prefHeight="28.0" prefWidth="88.0" text="Cnic" toggleGroup="$employee">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rJob" layoutX="15.0" layoutY="216.0" mnemonicParsing="false" onAction="#changeEmployee" prefHeight="28.0" prefWidth="88.0" text="Job" toggleGroup="$employee">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rShift" layoutX="16.0" layoutY="271.0" mnemonicParsing="false" onAction="#changeEmployee" prefHeight="28.0" prefWidth="88.0" text="Shift" toggleGroup="$employee">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rAddress" layoutX="15.0" layoutY="319.0" mnemonicParsing="false" onAction="#changeEmployee" prefHeight="28.0" prefWidth="147.0" text="Address" toggleGroup="$employee">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </RadioButton>
+      <Label alignment="CENTER" layoutX="-1.0" layoutY="62.0" prefHeight="18.0" prefWidth="600.0" text="Select What You Want To Change">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Button fx:id="backChange" layoutX="515.0" layoutY="348.0" mnemonicParsing="false" onAction="#switchToEditEmployee" text="Back" />
+   </children>
+</AnchorPane>

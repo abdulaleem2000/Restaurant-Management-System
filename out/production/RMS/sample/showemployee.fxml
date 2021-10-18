@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="446.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Showemployee">
+   <children>
+      <TableView fx:id="employeeTable" layoutY="107.0" prefHeight="288.0" prefWidth="456.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="nameCol" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="jobCol" prefWidth="75.0" text="Job" />
+            <TableColumn fx:id="shiftCol" prefWidth="75.0" text="Shift" />
+            <TableColumn fx:id="addressCol" prefWidth="75.0" text="Address" />
+            <TableColumn fx:id="cnicCol" prefWidth="75.0" text="Cnic" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="1.0" layoutY="28.0" prefHeight="18.0" prefWidth="456.0" text="Employee Table">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Button fx:id="showEmployee" layoutX="14.0" layoutY="41.0" mnemonicParsing="false" onAction="#search" prefHeight="26.0" prefWidth="79.0" text="Show" />
+      <Button layoutX="-133.0" layoutY="-89.0" mnemonicParsing="false" text="Button" />
+      <Button fx:id="backTable" layoutX="391.0" layoutY="42.0" mnemonicParsing="false" onAction="#switchToEmployeeMenu" prefHeight="26.0" prefWidth="52.0" text="Back" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ImageView fx:id="recipeImageView" fitHeight="275.0" fitWidth="441.0" layoutX="158.0" layoutY="70.0" pickOnBounds="true">
+         <image>
+            <Image url="@recipe.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="addRecipe" layoutX="-1.0" layoutY="113.0" mnemonicParsing="false" onAction="#switchToAddRecipe" prefHeight="26.0" prefWidth="147.0" text="Add Recipe" />
+      <Button fx:id="remRecipe" layoutX="-1.0" layoutY="173.0" mnemonicParsing="false" onAction="#switchToRemoveRecipe" prefHeight="26.0" prefWidth="147.0" text="Remove Recipe" />
+      <Button fx:id="editRecipeBut" layoutX="-1.0" layoutY="235.0" mnemonicParsing="false" onAction="#switchToEditRecipe" prefHeight="26.0" prefWidth="147.0" text="Edit Recipe" />
+      <Label alignment="CENTER" prefHeight="98.0" prefWidth="600.0" text="Recipe">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <Button fx:id="backRecipe" layoutX="495.0" layoutY="361.0" mnemonicParsing="false" onAction="#switchToMainMenu" prefHeight="26.0" prefWidth="78.0" text="Back" />
+      <Button fx:id="showRecp" layoutY="302.0" mnemonicParsing="false" onAction="#switchToShowRecipe" prefHeight="26.0" prefWidth="147.0" text="Show Recipes" />
+   </children>
+</AnchorPane>
